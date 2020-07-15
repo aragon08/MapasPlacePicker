@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.orion.mapasplacepicker.MainActivity">
+
+    <TextView
+        android:id="@+id/tvPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PlacePicker"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:textSize="25dp"
+        />
+
+
+    <EditText
+        android:id="@+id/etLat"
+        android:hint="Latitutde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPicker"/>
+    <EditText
+        android:id="@+id/etLng"
+        android:hint="Longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLat"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnGoLocation"
+        android:text="Go Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLng"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:text="Get Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
